@@ -1,0 +1,31 @@
+body{text-align: center}
+#all{                /* this for rally old IE ;  do not merge  with the other .outerdiv declaration!!*/
+             display:inline;
+            
+}
+#all{
+    border: 1px solid blue;
+    text-align: center;
+    display: -moz-inline-box;
+    display: inline-block;
+}
+table {
+    margin: 1em;
+    float: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table+table{margin-left:0;}
+table tr td, table tr th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.left, table{
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+/* optional,to stop other text in outer div from centering by default
+	.outerdiv {text-align: left;}
+*/
