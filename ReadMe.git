@@ -1,10 +1,10 @@
-# Development of scripts:
+# Development of scripts
 The scripts work together to collect nodes status from cream and cream-ce. Each script collects node number, node status, 
 and load of jobs each node has. After the data has been collected, it is then sent to amazon sqs server using ubuto3 sripts. 
 From aws amazon server the data is retrieved by a grid script in a grid server then converts the data to html page that is 
-displayed in http://www.grid.core.wits.ac.za/status/index.html. why ? did you do this 
+displayed in http://www.grid.core.wits.ac.za/status/index.html. why ? 
 
-# Script functionality:
+# Script functionality
 The following documentation applies to both 2ndSend_to_queue.py and Send_table.py scripts.
 First we started by importing subprocess library which can help us in getting both pbsnodes and df -h data. Now after getting 
 the pbsnodes data we ( who is we)  will store it in a variable named recieve_node_info. Using for and if loops we refine the data obtained 
@@ -24,4 +24,4 @@ every 7-15 minutes as long as there is new data on the amazon server.  retrieve_
 server and writes it in the file named index.html which shows node information in html formal.  retrieve_info.py also runs in a 
 screen named every-15-min by a script named every-15-min.sh.
 Index.html shows node status and space status in a form of html tables. Index.css is styling for index.html.  
- why these choice  can the parameterse be changes and what would be effect 
+ 
