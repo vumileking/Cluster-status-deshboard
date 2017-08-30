@@ -3,7 +3,7 @@
 The scripts work together to collect nodes status from cream and cream-ce. Each script collects node number, node status, 
 and load of jobs each node has. After the data has been collected, it is then sent to amazon sqs server using ubuto3 sripts. 
 From aws amazon server the data is retrieved by a grid script in a grid server then converts the data to html page that is 
-displayed in http://www.grid.core.wits.ac.za/status/index.html. why ? 
+displayed in http://www.grid.core.wits.ac.za/status/index.html. 
 
 # Script functionality
 
